@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3A206E125825577009CB0FD /* lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A206D825825576009CB0FD /* lua.framework */; };
+		A3A206E825825577009CB0FD /* luaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A206E725825577009CB0FD /* luaTests.swift */; };
+		A3A206EA25825577009CB0FD /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A206DA25825576009CB0FD /* lua.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A206ED25825577009CB0FD /* lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A206D825825576009CB0FD /* lua.framework */; };
+		A3A206EE25825577009CB0FD /* lua.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A206D825825576009CB0FD /* lua.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A206FD258255FD009CB0FD /* onelua.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A206FC258255FD009CB0FD /* onelua.c */; };
+		A3A207142582569F009CB0FD /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A207102582569F009CB0FD /* lualib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A207152582569F009CB0FD /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A3A207112582569F009CB0FD /* lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A207162582569F009CB0FD /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A207122582569F009CB0FD /* luaconf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A207172582569F009CB0FD /* lauxlib.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A207132582569F009CB0FD /* lauxlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A20732258257B5009CB0FD /* liblua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A20729258257B5009CB0FD /* liblua.framework */; };
+		A3A20739258257B5009CB0FD /* libluaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A20738258257B5009CB0FD /* libluaTests.swift */; };
+		A3A2073B258257B5009CB0FD /* liblua.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A2072B258257B5009CB0FD /* liblua.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3A2073E258257B5009CB0FD /* liblua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A20729258257B5009CB0FD /* liblua.framework */; };
+		A3A2073F258257B5009CB0FD /* liblua.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A20729258257B5009CB0FD /* liblua.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A2077F25825BD4009CB0FD /* src in Resources */ = {isa = PBXBuildFile; fileRef = A3A2077E25825BD3009CB0FD /* src */; };
+		A3A2078025825BD4009CB0FD /* src in Resources */ = {isa = PBXBuildFile; fileRef = A3A2077E25825BD3009CB0FD /* src */; };
 		A3A2FD362579DEC7009CB0FD /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FD352579DEC7009CB0FD /* Tests_iOS.swift */; };
 		A3A2FD412579DEC7009CB0FD /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FD402579DEC7009CB0FD /* Tests_macOS.swift */; };
 		A3A2FD432579DEC7009CB0FD /* mtxlua.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FD172579DEC7009CB0FD /* mtxlua.xcdatamodeld */; };
@@ -19,9 +36,55 @@
 		A3A2FD4A2579DEC7009CB0FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FD1B2579DEC7009CB0FD /* Persistence.swift */; };
 		A3A2FD4B2579DEC7009CB0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A2FD1C2579DEC7009CB0FD /* Assets.xcassets */; };
 		A3A2FD4C2579DEC7009CB0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A2FD1C2579DEC7009CB0FD /* Assets.xcassets */; };
+		A3A2FD6F2579E04F009CB0FD /* luahub.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FD6E2579E04F009CB0FD /* luahub.c */; };
+		A3A2FD702579E04F009CB0FD /* luahub.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FD6E2579E04F009CB0FD /* luahub.c */; };
+		A3A2FDCE257A04FF009CB0FD /* luaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FDCD257A04FF009CB0FD /* luaTests.m */; };
+		A3A2FE8F257A1C99009CB0FD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2FE8E257A1C99009CB0FD /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A3A206E225825577009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A206D725825576009CB0FD;
+			remoteInfo = lua;
+		};
+		A3A206E425825577009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A2FD202579DEC7009CB0FD;
+			remoteInfo = "mtxlua (iOS)";
+		};
+		A3A206EB25825577009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A206D725825576009CB0FD;
+			remoteInfo = lua;
+		};
+		A3A20733258257B5009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A20728258257B5009CB0FD;
+			remoteInfo = liblua;
+		};
+		A3A20735258257B5009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A2FD202579DEC7009CB0FD;
+			remoteInfo = "mtxlua (iOS)";
+		};
+		A3A2073C258257B5009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A20728258257B5009CB0FD;
+			remoteInfo = liblua;
+		};
 		A3A2FD322579DEC7009CB0FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
@@ -36,9 +99,78 @@
 			remoteGlobalIDString = A3A2FD282579DEC7009CB0FD;
 			remoteInfo = "mtxlua (macOS)";
 		};
+		A3A2FDCA257A04FF009CB0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3A2FD122579DEC6009CB0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3A2FD282579DEC7009CB0FD;
+			remoteInfo = "mtxluaosx (macOS)";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A3A206F225825577009CB0FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3A206EE25825577009CB0FD /* lua.framework in Embed Frameworks */,
+				A3A2073F258257B5009CB0FD /* liblua.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2FD882579E6D4009CB0FD /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../lib;
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2FDD4257A04FF009CB0FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2FE8A257A1C99009CB0FD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A3A206D825825576009CB0FD /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A206DA25825576009CB0FD /* lua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		A3A206DB25825576009CB0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A206E025825576009CB0FD /* luaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = luaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A206E725825577009CB0FD /* luaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = luaTests.swift; sourceTree = "<group>"; };
+		A3A206E925825577009CB0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A206FC258255FD009CB0FD /* onelua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = onelua.c; sourceTree = "<group>"; };
+		A3A207102582569F009CB0FD /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		A3A207112582569F009CB0FD /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
+		A3A207122582569F009CB0FD /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		A3A207132582569F009CB0FD /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		A3A20729258257B5009CB0FD /* liblua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = liblua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2072B258257B5009CB0FD /* liblua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = liblua.h; sourceTree = "<group>"; };
+		A3A2072C258257B5009CB0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A20731258257B5009CB0FD /* libluaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libluaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A20738258257B5009CB0FD /* libluaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libluaTests.swift; sourceTree = "<group>"; };
+		A3A2073A258257B5009CB0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A2077E25825BD3009CB0FD /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; name = src; path = res/src; sourceTree = "<group>"; };
 		A3A2FD182579DEC7009CB0FD /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		A3A2FD192579DEC7009CB0FD /* mtxluaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtxluaApp.swift; sourceTree = "<group>"; };
 		A3A2FD1A2579DEC7009CB0FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,13 +187,56 @@
 		A3A2FD3C2579DEC7009CB0FD /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A2FD402579DEC7009CB0FD /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		A3A2FD422579DEC7009CB0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A2FD6B2579E04F009CB0FD /* mtxlua (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mtxlua (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3A2FD6C2579E04F009CB0FD /* mtxlua (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mtxlua (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3A2FD6D2579E04F009CB0FD /* luahub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = luahub.h; sourceTree = "<group>"; };
+		A3A2FD6E2579E04F009CB0FD /* luahub.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = luahub.c; sourceTree = "<group>"; };
+		A3A2FDB8257A02F8009CB0FD /* mtxlua-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mtxlua-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3A2FDC6257A04FF009CB0FD /* luaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = luaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2FDCD257A04FF009CB0FD /* luaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = luaTests.m; sourceTree = "<group>"; };
+		A3A2FDCF257A04FF009CB0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A2FE5D257A07D6009CB0FD /* libreadline.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libreadline.tbd; path = usr/lib/libreadline.tbd; sourceTree = SDKROOT; };
+		A3A2FE8C257A1C99009CB0FD /* cmd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cmd; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2FE8E257A1C99009CB0FD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A3A206D525825576009CB0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A206DD25825576009CB0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A206E125825577009CB0FD /* lua.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A20726258257B5009CB0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2072E258257B5009CB0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A20732258257B5009CB0FD /* liblua.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3A2FD1E2579DEC7009CB0FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A206ED25825577009CB0FD /* lua.framework in Frameworks */,
+				A3A2073E258257B5009CB0FD /* liblua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,17 +261,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3A2FDC3257A04FF009CB0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2FE89257A1C99009CB0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3A206D925825576009CB0FD /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				A3A207132582569F009CB0FD /* lauxlib.h */,
+				A3A207112582569F009CB0FD /* lua.hpp */,
+				A3A207122582569F009CB0FD /* luaconf.h */,
+				A3A207102582569F009CB0FD /* lualib.h */,
+				A3A206FC258255FD009CB0FD /* onelua.c */,
+				A3A206DA25825576009CB0FD /* lua.h */,
+				A3A206DB25825576009CB0FD /* Info.plist */,
+			);
+			path = lua;
+			sourceTree = "<group>";
+		};
+		A3A206E625825577009CB0FD /* luaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A206E725825577009CB0FD /* luaTests.swift */,
+				A3A206E925825577009CB0FD /* Info.plist */,
+			);
+			path = luaTests;
+			sourceTree = "<group>";
+		};
+		A3A2072A258257B5009CB0FD /* liblua */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2072B258257B5009CB0FD /* liblua.h */,
+				A3A2072C258257B5009CB0FD /* Info.plist */,
+			);
+			path = liblua;
+			sourceTree = "<group>";
+		};
+		A3A20737258257B5009CB0FD /* libluaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A20738258257B5009CB0FD /* libluaTests.swift */,
+				A3A2073A258257B5009CB0FD /* Info.plist */,
+			);
+			path = libluaTests;
+			sourceTree = "<group>";
+		};
 		A3A2FD112579DEC6009CB0FD = {
 			isa = PBXGroup;
 			children = (
+				A3A2077E25825BD3009CB0FD /* src */,
 				A3A2FD162579DEC7009CB0FD /* Shared */,
 				A3A2FD232579DEC7009CB0FD /* iOS */,
 				A3A2FD2A2579DEC7009CB0FD /* macOS */,
 				A3A2FD342579DEC7009CB0FD /* Tests iOS */,
 				A3A2FD3F2579DEC7009CB0FD /* Tests macOS */,
+				A3A2FDCC257A04FF009CB0FD /* luaTests */,
+				A3A2FE8D257A1C99009CB0FD /* cmd */,
+				A3A206D925825576009CB0FD /* lua */,
+				A3A206E625825577009CB0FD /* luaTests */,
+				A3A2072A258257B5009CB0FD /* liblua */,
+				A3A20737258257B5009CB0FD /* libluaTests */,
+				A3A2FDF9257A0558009CB0FD /* Frameworks */,
 				A3A2FD222579DEC7009CB0FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,11 +342,17 @@
 		A3A2FD162579DEC7009CB0FD /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A3A2FD7B2579E073009CB0FD /* lib */,
 				A3A2FD192579DEC7009CB0FD /* mtxluaApp.swift */,
 				A3A2FD1A2579DEC7009CB0FD /* ContentView.swift */,
 				A3A2FD1B2579DEC7009CB0FD /* Persistence.swift */,
 				A3A2FD1C2579DEC7009CB0FD /* Assets.xcassets */,
 				A3A2FD172579DEC7009CB0FD /* mtxlua.xcdatamodeld */,
+				A3A2FD6D2579E04F009CB0FD /* luahub.h */,
+				A3A2FD6E2579E04F009CB0FD /* luahub.c */,
+				A3A2FDB8257A02F8009CB0FD /* mtxlua-Bridging-Header.h */,
+				A3A2FD6B2579E04F009CB0FD /* mtxlua (iOS)-Bridging-Header.h */,
+				A3A2FD6C2579E04F009CB0FD /* mtxlua (macOS)-Bridging-Header.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -120,6 +364,12 @@
 				A3A2FD292579DEC7009CB0FD /* mtxlua.app */,
 				A3A2FD312579DEC7009CB0FD /* Tests iOS.xctest */,
 				A3A2FD3C2579DEC7009CB0FD /* Tests macOS.xctest */,
+				A3A2FDC6257A04FF009CB0FD /* luaTests.xctest */,
+				A3A2FE8C257A1C99009CB0FD /* cmd */,
+				A3A206D825825576009CB0FD /* lua.framework */,
+				A3A206E025825576009CB0FD /* luaTests.xctest */,
+				A3A20729258257B5009CB0FD /* liblua.framework */,
+				A3A20731258257B5009CB0FD /* libluaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +409,138 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		A3A2FD7B2579E073009CB0FD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A3A2FDCC257A04FF009CB0FD /* luaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2FDCD257A04FF009CB0FD /* luaTests.m */,
+				A3A2FDCF257A04FF009CB0FD /* Info.plist */,
+			);
+			path = luaTests;
+			sourceTree = "<group>";
+		};
+		A3A2FDF9257A0558009CB0FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2FE5D257A07D6009CB0FD /* libreadline.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3A2FE8D257A1C99009CB0FD /* cmd */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2FE8E257A1C99009CB0FD /* main.swift */,
+			);
+			path = cmd;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A3A206D325825576009CB0FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A206EA25825577009CB0FD /* lua.h in Headers */,
+				A3A207142582569F009CB0FD /* lualib.h in Headers */,
+				A3A207172582569F009CB0FD /* lauxlib.h in Headers */,
+				A3A207152582569F009CB0FD /* lua.hpp in Headers */,
+				A3A207162582569F009CB0FD /* luaconf.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A20724258257B5009CB0FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2073B258257B5009CB0FD /* liblua.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		A3A206D725825576009CB0FD /* lua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A206EF25825577009CB0FD /* Build configuration list for PBXNativeTarget "lua" */;
+			buildPhases = (
+				A3A206D325825576009CB0FD /* Headers */,
+				A3A206D425825576009CB0FD /* Sources */,
+				A3A206D525825576009CB0FD /* Frameworks */,
+				A3A206D625825576009CB0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lua;
+			productName = lua;
+			productReference = A3A206D825825576009CB0FD /* lua.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3A206DF25825576009CB0FD /* luaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A206F325825577009CB0FD /* Build configuration list for PBXNativeTarget "luaTests" */;
+			buildPhases = (
+				A3A206DC25825576009CB0FD /* Sources */,
+				A3A206DD25825576009CB0FD /* Frameworks */,
+				A3A206DE25825576009CB0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A206E325825577009CB0FD /* PBXTargetDependency */,
+				A3A206E525825577009CB0FD /* PBXTargetDependency */,
+			);
+			name = luaTests;
+			productName = luaTests;
+			productReference = A3A206E025825576009CB0FD /* luaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3A20728258257B5009CB0FD /* liblua */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A20740258257B5009CB0FD /* Build configuration list for PBXNativeTarget "liblua" */;
+			buildPhases = (
+				A3A20724258257B5009CB0FD /* Headers */,
+				A3A20725258257B5009CB0FD /* Sources */,
+				A3A20726258257B5009CB0FD /* Frameworks */,
+				A3A20727258257B5009CB0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = liblua;
+			productName = liblua;
+			productReference = A3A20729258257B5009CB0FD /* liblua.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3A20730258257B5009CB0FD /* libluaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A20743258257B5009CB0FD /* Build configuration list for PBXNativeTarget "libluaTests" */;
+			buildPhases = (
+				A3A2072D258257B5009CB0FD /* Sources */,
+				A3A2072E258257B5009CB0FD /* Frameworks */,
+				A3A2072F258257B5009CB0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A20734258257B5009CB0FD /* PBXTargetDependency */,
+				A3A20736258257B5009CB0FD /* PBXTargetDependency */,
+			);
+			name = libluaTests;
+			productName = libluaTests;
+			productReference = A3A20731258257B5009CB0FD /* libluaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A3A2FD202579DEC7009CB0FD /* mtxlua (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3A2FD4F2579DEC7009CB0FD /* Build configuration list for PBXNativeTarget "mtxlua (iOS)" */;
@@ -169,29 +548,34 @@
 				A3A2FD1D2579DEC7009CB0FD /* Sources */,
 				A3A2FD1E2579DEC7009CB0FD /* Frameworks */,
 				A3A2FD1F2579DEC7009CB0FD /* Resources */,
+				A3A206F225825577009CB0FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A3A206EC25825577009CB0FD /* PBXTargetDependency */,
+				A3A2073D258257B5009CB0FD /* PBXTargetDependency */,
 			);
 			name = "mtxlua (iOS)";
 			productName = "mtxlua (iOS)";
 			productReference = A3A2FD212579DEC7009CB0FD /* mtxlua.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A3A2FD282579DEC7009CB0FD /* mtxlua (macOS) */ = {
+		A3A2FD282579DEC7009CB0FD /* mtxluaosx (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3A2FD522579DEC7009CB0FD /* Build configuration list for PBXNativeTarget "mtxlua (macOS)" */;
+			buildConfigurationList = A3A2FD522579DEC7009CB0FD /* Build configuration list for PBXNativeTarget "mtxluaosx (macOS)" */;
 			buildPhases = (
 				A3A2FD252579DEC7009CB0FD /* Sources */,
 				A3A2FD262579DEC7009CB0FD /* Frameworks */,
 				A3A2FD272579DEC7009CB0FD /* Resources */,
+				A3A2FD882579E6D4009CB0FD /* Embed Libraries */,
+				A3A2FDD4257A04FF009CB0FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "mtxlua (macOS)";
+			name = "mtxluaosx (macOS)";
 			productName = "mtxlua (macOS)";
 			productReference = A3A2FD292579DEC7009CB0FD /* mtxlua.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +616,41 @@
 			productReference = A3A2FD3C2579DEC7009CB0FD /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A3A2FDC5257A04FF009CB0FD /* luaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A2FDD9257A04FF009CB0FD /* Build configuration list for PBXNativeTarget "luaTests" */;
+			buildPhases = (
+				A3A2FDC2257A04FF009CB0FD /* Sources */,
+				A3A2FDC3257A04FF009CB0FD /* Frameworks */,
+				A3A2FDC4257A04FF009CB0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3A2FDCB257A04FF009CB0FD /* PBXTargetDependency */,
+			);
+			name = luaTests;
+			productName = luaTests;
+			productReference = A3A2FDC6257A04FF009CB0FD /* luaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3A2FE8B257A1C99009CB0FD /* cmd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3A2FE90257A1C99009CB0FD /* Build configuration list for PBXNativeTarget "cmd" */;
+			buildPhases = (
+				A3A2FE88257A1C99009CB0FD /* Sources */,
+				A3A2FE89257A1C99009CB0FD /* Frameworks */,
+				A3A2FE8A257A1C99009CB0FD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cmd;
+			productName = cmd;
+			productReference = A3A2FE8C257A1C99009CB0FD /* cmd */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -241,11 +660,27 @@
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					A3A206D725825576009CB0FD = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A3A206DF25825576009CB0FD = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A3A2FD202579DEC7009CB0FD;
+					};
+					A3A20728258257B5009CB0FD = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A3A20730258257B5009CB0FD = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A3A2FD202579DEC7009CB0FD;
+					};
 					A3A2FD202579DEC7009CB0FD = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					A3A2FD282579DEC7009CB0FD = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					A3A2FD302579DEC7009CB0FD = {
 						CreatedOnToolsVersion = 12.2;
@@ -254,6 +689,13 @@
 					A3A2FD3B2579DEC7009CB0FD = {
 						CreatedOnToolsVersion = 12.2;
 						TestTargetID = A3A2FD282579DEC7009CB0FD;
+					};
+					A3A2FDC5257A04FF009CB0FD = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A3A2FD282579DEC7009CB0FD;
+					};
+					A3A2FE8B257A1C99009CB0FD = {
+						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
@@ -271,19 +713,54 @@
 			projectRoot = "";
 			targets = (
 				A3A2FD202579DEC7009CB0FD /* mtxlua (iOS) */,
-				A3A2FD282579DEC7009CB0FD /* mtxlua (macOS) */,
+				A3A2FD282579DEC7009CB0FD /* mtxluaosx (macOS) */,
 				A3A2FD302579DEC7009CB0FD /* Tests iOS */,
 				A3A2FD3B2579DEC7009CB0FD /* Tests macOS */,
+				A3A2FDC5257A04FF009CB0FD /* luaTests */,
+				A3A2FE8B257A1C99009CB0FD /* cmd */,
+				A3A206D725825576009CB0FD /* lua */,
+				A3A206DF25825576009CB0FD /* luaTests */,
+				A3A20728258257B5009CB0FD /* liblua */,
+				A3A20730258257B5009CB0FD /* libluaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A3A206D625825576009CB0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A206DE25825576009CB0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A20727258257B5009CB0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2072F258257B5009CB0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3A2FD1F2579DEC7009CB0FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A3A2FD4B2579DEC7009CB0FD /* Assets.xcassets in Resources */,
+				A3A2077F25825BD4009CB0FD /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A2FD4C2579DEC7009CB0FD /* Assets.xcassets in Resources */,
+				A3A2078025825BD4009CB0FD /* src in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +787,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3A2FDC4257A04FF009CB0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A3A206D425825576009CB0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A206FD258255FD009CB0FD /* onelua.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A206DC25825576009CB0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A206E825825577009CB0FD /* luaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A20725258257B5009CB0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2072D258257B5009CB0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A20739258257B5009CB0FD /* libluaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3A2FD1D2579DEC7009CB0FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A3A2FD452579DEC7009CB0FD /* mtxluaApp.swift in Sources */,
+				A3A2FD6F2579E04F009CB0FD /* luahub.c in Sources */,
 				A3A2FD492579DEC7009CB0FD /* Persistence.swift in Sources */,
 				A3A2FD432579DEC7009CB0FD /* mtxlua.xcdatamodeld in Sources */,
 				A3A2FD472579DEC7009CB0FD /* ContentView.swift in Sources */,
@@ -328,6 +845,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A2FD462579DEC7009CB0FD /* mtxluaApp.swift in Sources */,
+				A3A2FD702579E04F009CB0FD /* luahub.c in Sources */,
 				A3A2FD4A2579DEC7009CB0FD /* Persistence.swift in Sources */,
 				A3A2FD442579DEC7009CB0FD /* mtxlua.xcdatamodeld in Sources */,
 				A3A2FD482579DEC7009CB0FD /* ContentView.swift in Sources */,
@@ -350,9 +868,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A3A2FDC2257A04FF009CB0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2FDCE257A04FF009CB0FD /* luaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2FE88257A1C99009CB0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2FE8F257A1C99009CB0FD /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A3A206E325825577009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A206D725825576009CB0FD /* lua */;
+			targetProxy = A3A206E225825577009CB0FD /* PBXContainerItemProxy */;
+		};
+		A3A206E525825577009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A2FD202579DEC7009CB0FD /* mtxlua (iOS) */;
+			targetProxy = A3A206E425825577009CB0FD /* PBXContainerItemProxy */;
+		};
+		A3A206EC25825577009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A206D725825576009CB0FD /* lua */;
+			targetProxy = A3A206EB25825577009CB0FD /* PBXContainerItemProxy */;
+		};
+		A3A20734258257B5009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A20728258257B5009CB0FD /* liblua */;
+			targetProxy = A3A20733258257B5009CB0FD /* PBXContainerItemProxy */;
+		};
+		A3A20736258257B5009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A2FD202579DEC7009CB0FD /* mtxlua (iOS) */;
+			targetProxy = A3A20735258257B5009CB0FD /* PBXContainerItemProxy */;
+		};
+		A3A2073D258257B5009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A20728258257B5009CB0FD /* liblua */;
+			targetProxy = A3A2073C258257B5009CB0FD /* PBXContainerItemProxy */;
+		};
 		A3A2FD332579DEC7009CB0FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A3A2FD202579DEC7009CB0FD /* mtxlua (iOS) */;
@@ -360,12 +924,229 @@
 		};
 		A3A2FD3E2579DEC7009CB0FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A3A2FD282579DEC7009CB0FD /* mtxlua (macOS) */;
+			target = A3A2FD282579DEC7009CB0FD /* mtxluaosx (macOS) */;
 			targetProxy = A3A2FD3D2579DEC7009CB0FD /* PBXContainerItemProxy */;
+		};
+		A3A2FDCB257A04FF009CB0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3A2FD282579DEC7009CB0FD /* mtxluaosx (macOS) */;
+			targetProxy = A3A2FDCA257A04FF009CB0FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A3A206F025825577009CB0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = lua;
+				INFOPLIST_FILE = lua/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.lua;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3A206F125825577009CB0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = lua;
+				INFOPLIST_FILE = lua/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.lua;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3A206F425825577009CB0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				INFOPLIST_FILE = luaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.luaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mtxlua.app/mtxlua";
+			};
+			name = Debug;
+		};
+		A3A206F525825577009CB0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				INFOPLIST_FILE = luaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.luaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mtxlua.app/mtxlua";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3A20741258257B5009CB0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = liblua/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.liblua;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3A20742258257B5009CB0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = liblua/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.liblua;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A3A20744258257B5009CB0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				INFOPLIST_FILE = libluaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.libluaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mtxlua.app/mtxlua";
+			};
+			name = Debug;
+		};
+		A3A20745258257B5009CB0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				INFOPLIST_FILE = libluaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.libluaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mtxlua.app/mtxlua";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A3A2FD4D2579DEC7009CB0FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -482,18 +1263,29 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2JNH2GMKP;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared/lib",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.mtxlua;
 				PRODUCT_NAME = mtxlua;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/mtxlua (iOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -504,18 +1296,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2JNH2GMKP;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared/lib",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.mtxlua;
 				PRODUCT_NAME = mtxlua;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/mtxlua (iOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -527,6 +1329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -538,10 +1341,16 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.mtxlua;
 				PRODUCT_NAME = mtxlua;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/mtxlua (macOS)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -551,6 +1360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -562,10 +1372,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Shared/lib",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.cn.mtxlua;
 				PRODUCT_NAME = mtxlua;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Shared/mtxlua (macOS)-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -659,9 +1474,113 @@
 			};
 			name = Release;
 		};
+		A3A2FDDA257A04FF009CB0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				INFOPLIST_FILE = luaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.luaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mtxlua.app/Contents/MacOS/mtxlua";
+			};
+			name = Debug;
+		};
+		A3A2FDDB257A04FF009CB0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				INFOPLIST_FILE = luaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cn.luaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mtxlua.app/Contents/MacOS/mtxlua";
+			};
+			name = Release;
+		};
+		A3A2FE91257A1C99009CB0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A3A2FE92257A1C99009CB0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D2JNH2GMKP;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A3A206EF25825577009CB0FD /* Build configuration list for PBXNativeTarget "lua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A206F025825577009CB0FD /* Debug */,
+				A3A206F125825577009CB0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A206F325825577009CB0FD /* Build configuration list for PBXNativeTarget "luaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A206F425825577009CB0FD /* Debug */,
+				A3A206F525825577009CB0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A20740258257B5009CB0FD /* Build configuration list for PBXNativeTarget "liblua" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A20741258257B5009CB0FD /* Debug */,
+				A3A20742258257B5009CB0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A20743258257B5009CB0FD /* Build configuration list for PBXNativeTarget "libluaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A20744258257B5009CB0FD /* Debug */,
+				A3A20745258257B5009CB0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A3A2FD152579DEC6009CB0FD /* Build configuration list for PBXProject "mtxlua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -680,7 +1599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3A2FD522579DEC7009CB0FD /* Build configuration list for PBXNativeTarget "mtxlua (macOS)" */ = {
+		A3A2FD522579DEC7009CB0FD /* Build configuration list for PBXNativeTarget "mtxluaosx (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3A2FD532579DEC7009CB0FD /* Debug */,
@@ -703,6 +1622,24 @@
 			buildConfigurations = (
 				A3A2FD592579DEC7009CB0FD /* Debug */,
 				A3A2FD5A2579DEC7009CB0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A2FDD9257A04FF009CB0FD /* Build configuration list for PBXNativeTarget "luaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2FDDA257A04FF009CB0FD /* Debug */,
+				A3A2FDDB257A04FF009CB0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3A2FE90257A1C99009CB0FD /* Build configuration list for PBXNativeTarget "cmd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3A2FE91257A1C99009CB0FD /* Debug */,
+				A3A2FE92257A1C99009CB0FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
