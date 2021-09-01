@@ -7,7 +7,7 @@
 
 import CoreData
 
-import lua
+import Lua
 
 struct PersistenceController {
     static let shared = PersistenceController()
@@ -63,7 +63,7 @@ struct PersistenceController {
 		print("errf:\(errf)")
 
 		lua_atpanic(L, perrf)
-		let oldTop = lua.lua_gettop(L);
+		let oldTop = lua_gettop(L);
 
 		let luaf = "src/main.lua"
 		let fm = FileManager.default
@@ -76,10 +76,10 @@ struct PersistenceController {
 		let nReturns:Int32 = -1
 		let errFunc:Int32 = errf //LuaAPI.load_error_func(_L, errorFuncRef);
 		let ctx:Int = 0 //lua_KContext
-		let ret = lua.lua_pcallk(L, nArg, nReturns, errFunc, ctx, pkf)
+		let ret = lua_pcallk(L, nArg, nReturns, errFunc, ctx, pkf)
 		//var number:Int = 0
 		//var output: UnsafeMutablePointer<Int> = UnsafeMutablePointer<Int>(&number)
-		let cstr = lua.lua_tolstring(L, 1, nil)
+		let cstr = lua_tolstring(L, 1, nil)
 		if cstr != nil {
 			let s = cs(cstr!)
 			print("Hello, switf-lua [ret:\(ret)] [top:\(s)]")

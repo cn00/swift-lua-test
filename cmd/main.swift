@@ -7,7 +7,7 @@
 
 import Foundation
 
-import lua
+import Lua
 
 func cs(_ c:UnsafePointer<Int8>)->String{
 	return String(cString:c)
